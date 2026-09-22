@@ -8,6 +8,7 @@
                     sh 'pwd'
                     sh 'whoami'
                     sh 'ls -l'
+                    sh 'npm run build'
                 }
             }  
             
