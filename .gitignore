@@ -1,0 +1,15 @@
+# Dependencies
+backend/node_modules/
+frontend/vite-project/node_modules/
+
+# Environment variables
+.env
+backend/.env
+frontend/vite-project/.env
+
+# Backend build
+backend/dist/
+
+# SSL certificates
+frontend/vite-project/nginx/ssl/
+*.pem
