@@ -12,17 +12,17 @@ pipeline {
     }
     stage('Install Dependencies') {
       steps {
-        sh 'cd frontend && npm install'
+        sh 'cd frontend/vite-project && npm install'
       }
     }
     stage('Build') {
       steps {
-        sh 'cd frontend && npm run build'
+        sh 'cd frontend/vite-project && npm run build'
       }
     }
     stage('Build docker img') {
       steps {
-        sh 'cd frontend && docker build -t eyadrezk/coffee-frontend:latest .'
+        sh 'cd frontend/vite-project && docker build -t eyadrezk/coffee-frontend:latest .'
       }
     }
     stage('Push docker img') {
