@@ -6,7 +6,6 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        // Clone the repository
         git branch: 'main', url: 'https://github.com/Eyad-Rezk/Coffee-Corner.git'
       }
     }
