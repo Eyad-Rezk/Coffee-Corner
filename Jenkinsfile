@@ -31,6 +31,7 @@ pipeline {
       steps {
         sh 'echo ${DOCKER_HUB_PSW} | docker login -u ${DOCKER_HUB_USR} --password-stdin'
         sh 'docker push eyadrezk/coffee-backend:latest'
+        sh 'finished suuccessfullt!!!!'
       }
     }
   }
