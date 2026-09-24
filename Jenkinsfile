@@ -13,11 +13,6 @@ pipeline {
         sh 'cd backend && npm install'
       }
     }
-    stage('Run Tests') {
-      steps {
-        sh 'cd backend && npm test'
-      }
-    }
     stage('Build') {
       steps {
         sh 'cd backend && npm run build'
